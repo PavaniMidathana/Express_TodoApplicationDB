@@ -1,0 +1,24 @@
+GET http://localhost:3000/todos/
+
+###
+GET http://localhost:3000/todos/1/
+
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 8,
+  "todo": "Finalize project",
+  "priority": "HIGH",
+  "status": "DONE"
+}
+
+###
+PUT http://localhost:3000/todos/1/
+Content-Type: application/json
+
+{ "dueDate": "2021-01-12" }
+
+###
+DELETE http://localhost:3000/todos/8/
